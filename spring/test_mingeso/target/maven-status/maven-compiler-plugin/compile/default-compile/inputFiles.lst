@@ -1,6 +1,0 @@
-/home/sebasur4/spring/test_mingeso/src/main/java/com/bolsadeideas/spring/apirest/models/services/IProductoService.java
-/home/sebasur4/spring/test_mingeso/src/main/java/com/bolsadeideas/spring/apirest/SpringApirestMingesoApplication.java
-/home/sebasur4/spring/test_mingeso/src/main/java/com/bolsadeideas/spring/apirest/models/dao/IProductoDao.java
-/home/sebasur4/spring/test_mingeso/src/main/java/com/bolsadeideas/spring/apirest/models/entity/Producto.java
-/home/sebasur4/spring/test_mingeso/src/main/java/com/bolsadeideas/spring/apirest/models/services/ProductoServiceImpl.java
-/home/sebasur4/spring/test_mingeso/src/main/java/com/bolsadeideas/spring/apirest/controllers/ProductoRestController.java

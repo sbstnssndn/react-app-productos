@@ -1,6 +1,0 @@
-com/bolsadeideas/spring/apirest/models/services/IProductoService.class
-com/bolsadeideas/spring/apirest/SpringApirestMingesoApplication.class
-com/bolsadeideas/spring/apirest/models/entity/Producto.class
-com/bolsadeideas/spring/apirest/models/dao/IProductoDao.class
-com/bolsadeideas/spring/apirest/models/services/ProductoServiceImpl.class
-com/bolsadeideas/spring/apirest/controllers/ProductoRestController.class
