@@ -1,6 +1,6 @@
 package com.bolsadeideas.spring.apirest;
 
-import static org.junit.Assert.assertEquals;
+
 import static org.junit.Assert.fail;
 
 import java.util.Date;
@@ -14,6 +14,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.bolsadeideas.spring.apirest.models.entity.Producto;
 import com.bolsadeideas.spring.apirest.models.services.IProductoService;
+
+
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
