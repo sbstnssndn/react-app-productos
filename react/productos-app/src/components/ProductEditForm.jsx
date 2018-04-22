@@ -21,7 +21,7 @@ class ProductEditForm extends React.Component {
 
   fetchProduct() {
     const { match: {params} } = this.props;
-    Axios.get(`http://localhost:8080/api/productos/${params.productId}`)
+    Axios.get(`http://localhost:8091/api/productos/${params.productId}`)
       .then(response => {
         console.log(response);
         this.setState({
