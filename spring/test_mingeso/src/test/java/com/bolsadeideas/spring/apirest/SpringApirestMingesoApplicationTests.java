@@ -19,19 +19,19 @@ import com.bolsadeideas.spring.apirest.models.services.IProductoService;
 @SpringBootTest
 public class SpringApirestMingesoApplicationTests {
 
-//	@Autowired
-//	IProductoService daoService;
+	@Autowired
+	IProductoService daoService;
 	
 	@Test
 	public void contextLoads() {
-//		Producto producto = new Producto();
-//		producto.setNombre("productoPrueba");
-//		producto.setCategoria("categoriaPrueba");
-//		producto.setPrecio(1000);
-//		producto.setFechaVencimiento(new Date());
-//		if(daoService.save(producto) == null) fail("no se pudo agregar");
-//		
-		assertEquals("hola","hola");
+		Producto producto = new Producto();
+		producto.setNombre("productoPrueba");
+		producto.setCategoria("categoriaPrueba");
+		producto.setPrecio(1000);
+		producto.setFechaVencimiento(new Date());
+		if(daoService.save(producto) == null) fail("no se pudo agregar");
+		
+		
 	}
 	
 	
