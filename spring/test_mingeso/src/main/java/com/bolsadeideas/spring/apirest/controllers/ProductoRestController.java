@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import com.bolsadeideas.spring.apirest.models.entity.Producto;
 import com.bolsadeideas.spring.apirest.models.services.IProductoService;
 
+@CrossOrigin(origins={"http://localhost:3000"})
 @RestController
 @RequestMapping("/api")
 public class ProductoRestController {
@@ -37,14 +38,14 @@ public class ProductoRestController {
 		return productoService.findById(id);
 	}
 	
-	@CrossOrigin
+	
 	@PostMapping("/productos")
 	@ResponseStatus(HttpStatus.CREATED)
 	public Producto create(@RequestBody Producto producto) {
 		return productoService.save(producto);	
 	}
 
-	@CrossOrigin
+
 	@PutMapping("/productos/{id}")
 	@ResponseStatus(HttpStatus.CREATED)
 	public Producto update(@RequestBody Producto producto, @PathVariable Long id) {
@@ -57,7 +58,7 @@ public class ProductoRestController {
 		return productoService.save(productoActual);
 	}
 	
-	@CrossOrigin
+
 	@DeleteMapping("/productos/{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable Long id) {
