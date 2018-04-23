@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import com.bolsadeideas.spring.apirest.models.entity.Producto;
 import com.bolsadeideas.spring.apirest.models.services.IProductoService;
 
+@CrossOrigin(origins= {"http://localhost:3000/"})
 @RestController
 @RequestMapping("/api")
 public class ProductoRestController {
