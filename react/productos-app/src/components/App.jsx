@@ -14,7 +14,7 @@ class App extends React.Component {
   }
 
   fetchProducts() {
-    Axios.get('http://localhost:8091/api/productos')
+    Axios.get('http://localhost:8090/spring-apirest-mingeso-0.0.1-SNAPSHOT/api/productos')
       .then(response => {
         console.log(response);
         this.setState({products:response.data});

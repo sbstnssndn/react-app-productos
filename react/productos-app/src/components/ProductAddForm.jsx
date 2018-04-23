@@ -32,7 +32,7 @@ class ProductAddForm extends React.Component {
       fechaVencimiento: this.state.fechaVencimiento,
     })
 
-    Axios.post('http://localhost:8091/api/productos', data, {
+    Axios.post('http://localhost:8090/spring-apirest-mingeso-0.0.1-SNAPSHOT/api/productos', data, {
       headers: {
         'Content-Type': 'application/json',
       }

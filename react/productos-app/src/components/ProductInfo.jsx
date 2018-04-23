@@ -21,7 +21,7 @@ class ProductInfo extends React.Component {
 
   fetchProduct() {
     const { match: {params} } = this.props;
-    Axios.get(`http://localhost:8091/api/productos/${params.productId}`)
+    Axios.get(`http://localhost:8090/spring-apirest-mingeso-0.0.1-SNAPSHOT/api/productos/${params.productId}`)
       .then(response => {
         console.log(response);
         this.setState({product:response.data});
@@ -59,7 +59,7 @@ class ProductInfo extends React.Component {
       fechaVencimiento: this.state.fechaVencimiento,
     })
 
-    Axios.put(`http://localhost:8091/api/productos/${params.productId}`, data, {
+    Axios.put(`http://localhost:8090/spring-apirest-mingeso-0.0.1-SNAPSHOT/api/productos/${params.productId}`, data, {
       headers: {
         'Content-Type': 'application/json',
       }
@@ -68,13 +68,13 @@ class ProductInfo extends React.Component {
         console.log(result)
       });
       
-    window.location.href=`http://localhost:8091/api/productos/${params.productId}`;
+    window.location.href=`http://localhost:8090/spring-apirest-mingeso-0.0.1-SNAPSHOT/api/productos/${params.productId}`;
   }
 
   handleDelete() {
     const { match: {params} } = this.props;
 
-    Axios.delete(`http://localhost:8091/api/productos/${params.productId}`)
+    Axios.delete(`http://localhost:8090/spring-apirest-mingeso-0.0.1-SNAPSHOT/api/productos/${params.productId}`)
       .then(response => {
         console.log(response);
       })

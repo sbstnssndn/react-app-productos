@@ -53,7 +53,7 @@ class ProductEditForm extends React.Component {
     })
 
     const { match: {params} } = this.props;
-    Axios.put(`http://localhost:8080/api/productos/${params.productId}`, data, {
+    Axios.put(`http://localhost:8090/spring-apirest-mingeso-0.0.1-SNAPSHOT/api/productos/${params.productId}`, data, {
       headers: {
         'Content-Type': 'application/json',
       }

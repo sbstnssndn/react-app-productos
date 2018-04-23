@@ -26,13 +26,13 @@ public class ProductoRestController {
 	
 	private IProductoService productoService;
 	
-	@CrossOrigin
+	
 	@GetMapping("/productos")
 	public List<Producto> index(){
 		return productoService.findAll();
 	}
 	
-	@CrossOrigin
+	
 	@GetMapping("/productos/{id}")
 	public Producto show(@PathVariable Long id) {
 		
