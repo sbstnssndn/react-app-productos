@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import com.bolsadeideas.spring.apirest.models.entity.Producto;
 import com.bolsadeideas.spring.apirest.models.services.IProductoService;
 
-@CrossOrigin(origins= {"http://localhost:3000/"})
+@CrossOrigin(origins= {"http://localhost:3000"})
 @RestController
 @RequestMapping("/api")
 public class ProductoRestController {
@@ -40,7 +40,7 @@ public class ProductoRestController {
 		return productoService.findById(id);
 	}
 	
-	@CrossOrigin
+	@CrossOrigin(origins= {"http://localhost:3000/productos/agregar"})
 	@PostMapping("/productos")
 	@ResponseStatus(HttpStatus.CREATED)
 	public Producto create(@RequestBody Producto producto) {
