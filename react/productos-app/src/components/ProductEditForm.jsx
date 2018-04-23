@@ -62,7 +62,7 @@ class ProductEditForm extends React.Component {
         console.log(result)
       });
       
-      window.location.href=`/productos/${this.state.id}`;
+      
   }
 
   componentDidMount() {
