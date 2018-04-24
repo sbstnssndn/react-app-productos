@@ -1,4 +1,4 @@
-# Repositorio  de grupo numero 4 seccion b-02
+
 # Entrega 1 de tingeso/mingeso
 mantis :
 
